@@ -95,19 +95,31 @@ Reported experimental results on the synthetic dataset:
 
 ## 📁 Project Structure
 
-```text
 EviProfile/
-├── app.py
-├── run_pipeline.py
+│
 ├── requirements.txt
+├── run_pipeline.py
+├── app.py
+│
 ├── resume_intel/
-├── tests/
-├── data/
-├── results/
-└── models/
-```
+│   ├── __init__.py
+│   ├── config.py
+│   ├── lexicons.py
+│   ├── generator.py
+│   ├── parsers.py
+│   ├── preprocess.py
+│   ├── extractor.py
+│   ├── evidence.py
+│   ├── ranking.py
+│   ├── models.py
+│   ├── fairness.py
+│   ├── pipeline.py
+│   ├── experiments.py
+│   └── viz.py
+│
+└── tests/
+    └── test_smoke.py
 
-*The folder structure above is illustrative. Actual filenames may differ.*
 
 ## ⚙️ Installation
 
